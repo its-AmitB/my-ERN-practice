@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Users</title>
+</head>
+
+<body>
+
+    <h1>Users from MongoDB</h1>
+
+    <table border="1">
+
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+
+        <% usersData.forEach(u => { %>
+
+            <tr>
+                <td><%= u.name %></td>
+                <td><%= u.age %></td>
+            </tr>
+
+        <% }) %>
+
+    </table>
+
+</body>
+</html>

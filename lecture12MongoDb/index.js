@@ -9,6 +9,8 @@ const DB_URL = "mongodb://localhost:27017";
 // Create a MongoDB client instance
 const client = new MongoClient(DB_URL);
 
+
+
 // Function to establish database connection
 async function connectDB() {
   try {
@@ -33,6 +35,8 @@ async function connectDB() {
 
 // Execute database connection
 connectDB();
+
+
 
 // Create Express application
 const app = express();
